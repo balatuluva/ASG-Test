@@ -24,7 +24,7 @@ resource "aws_sns_topic" "scale_alerts" {
 resource "aws_sns_topic_subscription" "email" {
   topic_arn = aws_sns_topic.scale_alerts.arn
   protocol  = "email"
-  endpoint  = "bobboss005@gmail.com.com"
+  endpoint  = "***@gmail.com"
 }
 
 resource "aws_cloudwatch_metric_alarm" "cpu_high" {
